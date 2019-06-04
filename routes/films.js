@@ -19,7 +19,7 @@ router.get('/films', function(req, res, next) {
 
 router.post('/film', function(req, res, next) {
 	console.log("***************************************************************", req.body);
-	model.Films.Create({
+	model.Films.create({
 		title: req.body.title,
 		description: req.body.description,
 		image: req.body.image,
